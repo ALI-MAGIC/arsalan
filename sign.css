@@ -1,0 +1,192 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #333;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vh;
+}
+h1{
+    background: none;
+    text-align: center;
+    margin-bottom: 20;
+    color: aliceblue;
+    text-rendering: geometricPrecision;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    padding: 10;
+    opacity: 0.5;
+    border-bottom: 2px solid #000000;
+    animation-name: arc;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+   
+}
+@keyframes arc{
+    0%{
+        opacity: 0.5;
+    }
+    20%{
+        opacity: 10;
+    }
+    30%{
+        opacity: 30;
+    }
+    50%{
+        opacity: 50;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
+form{
+    padding: 30;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    position: relative;
+    height: 330px;
+    background-color: rgba(255, 255, 255, 0.1);
+    }
+.warpper{
+    filter: drop-shadow(3px 3px 3px #000000);border-radius: 6px;
+}
+.inputbox{
+    background: none;
+}
+.btn{
+    background: none;
+    display: block;
+
+}
+.btn button{
+    margin-top: 15;
+    padding: 6;
+    background: none;
+    border: none;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    width: 250;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 5;
+    opacity: 0.5;
+    animation-name: btn;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+transition-duration: 0.6s;
+}
+button:hover{
+    background-color: rgb(230, 230, 230);
+    color: #333;
+}
+@keyframes btn {
+    0%{
+        transform: translateY(-10px);
+        opacity: 0.5;
+    }
+    10%{
+        opacity: 10;
+    }
+    30%{
+        opacity: 20;
+    }
+    60%{
+        opacity: 50;
+    }
+    70%{
+        opacity: 60;
+    }
+    90%{
+        opacity: 100;
+    }
+    100%{
+        opacity: 0.5;
+        transform: translateY(0px);
+    }
+}
+
+.inputbox input{
+    display: block;
+    margin-top: 20;
+    border: none;
+    outline: none;
+    width: 250px;
+    padding: 10;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-property: all;
+    transition-duration: 0.6s;
+}
+input:focus{
+    border-bottom: 1px solid #000000;
+    transform: scale(120%);
+}
+.register{
+    position: absolute;
+    bottom: 10;
+    right: 4;
+    background: none;
+    color: #000000;
+
+}
+a{
+    background: none;
+}
+.checkbox input[type=checkbox]{
+    /* margin-top: 45; */
+    background: none;
+    margin-left: 135;
+    margin-top: 10;
+}
+.checkbox{
+    background: none;
+    display: inline;
+}
+p[ class=rem]{
+    display: inline;
+    background: none;
+    color: #fff;
+    position: absolute;
+    bottom: 47;
+    right: 27;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p[class=pp]{
+    display: inline;
+    background: none;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+}
+a{
+    color: #000000;
+    transition-duration: 0.6s;
+}
+a:hover{
+    color: rgb(0, 166, 255);
+
+}
+ion-icon{
+    background: none;
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    left: 0;
+    top: 3;
+    transition-property: all;
+    transition-duration: 0.6s;
+    color: rgba(0, 0, 0, 0.7);
+}
+ion-icon:hover{
+    color: #fff;
+    
+}
