@@ -315,6 +315,7 @@ a:focus {
 
 .slider_section .img-container .img-box img {
   width: 85%;
+  border-radius: 7px;
 }
 
 .slider_section #carouselExampleIndicators {
